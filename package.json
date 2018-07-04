@@ -1,7 +1,7 @@
 {
   "name": "react-rename",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "Create a renamed duplicate for any Component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
