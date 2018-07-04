@@ -1,0 +1,44 @@
+{
+  "name": "react-rename",
+  "version": "0.0.3",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "ts-react-toolbox dev",
+    "test": "ts-react-toolbox test",
+    "test:ci": "ts-react-toolbox test --runInBand --coverage",
+    "build": "ts-react-toolbox build",
+    "release": "ts-react-toolbox release",
+    "prepublishOnly": "yarn build",
+    "lint": "ts-react-toolbox lint",
+    "static": "ts-react-toolbox publish",
+    "bootstrap": "ts-react-toolbox init",
+    "format": "ts-react-toolbox format",
+    "analyze": "ts-react-toolbox analyze"
+  },
+  "peerDependencies": {
+    "react": "^16.3.0"
+  },
+  "repository": "",
+  "bugs": {
+    "url": "https://github.com/theKashey/react-rename/issues"
+  },
+  "homepage": "https://github.com/theKashey/react-rename#readme",
+  "author": "Anton Korzunov (thekashey@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "8.0.0",
+    "ts-react-toolbox": "^0.1.12"
+  },
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "keywords": [],
+  "dependencies": {
+    "function-double": "^1.0.3"
+  }
+}
