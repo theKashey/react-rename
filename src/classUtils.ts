@@ -4,7 +4,7 @@ declare const process:any;
 
 const indirectEval = process.env.NODE_ENV === 'production' ? () => 0 : eval;
 
-const doesSupportClasses = 0 &&  (function () {
+const doesSupportClasses = 1 &&  (function () {
   try {
     if (indirectEval('(function(){ return class TestClassSupport {} })()')) {
       return true;
