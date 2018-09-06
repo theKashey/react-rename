@@ -22,5 +22,12 @@ export function rename<T extends React.ComponentType<any>>(target: T, newName: s
     value: newName
   });
 
+  safeDefine(dupe, 'displayName', {
+    configurable: true,
+    writable: false,
+    enumerable: false,
+    value: newName
+  });
+
   return dupe;
 }

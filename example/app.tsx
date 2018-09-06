@@ -5,26 +5,37 @@ import {GHCorner} from 'react-gh-corner';
 import {reactRename} from '../src';
 
 export interface AppState {
-  
+
 }
+
+console.log('main');
+
 const repoUrl = 'https://github.com/zzarcon/';
 
-const SApp:React.SFC = ({children}) => <AppWrapper>{children}</AppWrapper>
+const context = React.createContext("test");
 
-const RApp = reactRename(SApp,'🔥⚛️');
-const RGHCorner = reactRename(GHCorner,'🐙◥');
+const RProvider = reactRename(context.Provider, "PRO!");
+const RConsumer = reactRename(context.Consumer, "CONS!");
+
+const SApp: React.SFC = ({children}) => <AppWrapper>{children}</AppWrapper>
+
+const RApp = reactRename(SApp, '🔥⚛️');
+const RGHCorner = reactRename(GHCorner, '🐙◥');
 
 export default class App extends Component <{}, AppState> {
-  state: AppState = {
-    
-  }
+  state: AppState = {}
 
   render() {
     return (
-      <RApp>
-        <RGHCorner href={repoUrl} />
-        Example!
-      </RApp>
+      <RProvider value={"YEES"}>
+        <RApp>
+          <RConsumer>
+            {(v:any) => <div>{v}</div>}
+          </RConsumer>
+          <RGHCorner href={repoUrl}/>
+          Example!
+        </RApp>
+      </RProvider>
     )
   }
 }

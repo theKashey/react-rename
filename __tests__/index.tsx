@@ -14,7 +14,7 @@ describe('Specs', () => {
     expect(mount(<div><F1 id={1}/><F2 id={2}/></div>)).toMatchSnapshot();
   });
 
-  it.only('Dupe Check Classes', () => {
+  it('Dupe Check Classes', () => {
     const spy = jest.fn();
 
     class F1 extends React.Component<{ id: number }> {
