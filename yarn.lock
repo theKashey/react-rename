@@ -758,7 +758,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@^22.4.3, babel-jest@^22.4.4:
+babel-jest@^22.4.4:
   version "22.4.4"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-22.4.4.tgz#977259240420e227444ebe49e226a61e49ea659d"
   dependencies:
@@ -3079,12 +3079,10 @@ function-bind@^1.1.0, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
-function-double@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/function-double/-/function-double-1.0.3.tgz#d0792f9a2e36f21490dce8eccc7bbcc477bd968f"
+function-double@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/function-double/-/function-double-1.0.4.tgz#46074f215a171594036d816fa963c2902b482c86"
   dependencies:
-    babel-jest "^22.4.3"
-    jest "^22.4.3"
     util-arity "^1.1.0"
 
 function.prototype.name@^1.0.3:
@@ -4371,7 +4369,7 @@ jest-worker@^22.2.2, jest-worker@^22.4.3:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@^22.4.2, jest@^22.4.3:
+jest@^22.4.2:
   version "22.4.4"
   resolved "https://registry.yarnpkg.com/jest/-/jest-22.4.4.tgz#ffb36c9654b339a13e10b3d4b338eb3e9d49f6eb"
   dependencies:

@@ -39,6 +39,6 @@
   },
   "keywords": [],
   "dependencies": {
-    "function-double": "^1.0.3"
+    "function-double": "^1.0.4"
   }
 }
